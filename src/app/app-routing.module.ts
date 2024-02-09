@@ -5,9 +5,9 @@ import { UsuarioDetailsComponent } from './components/usuario-details/usuario-de
 import { AddUsuarioComponent } from './components/add-usuario/add-usuario.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'usuario', pathMatch: 'full' },
-  { path: 'usuario', component: UsuarioListComponent },
-  { path: 'usuario/:id', component: UsuarioDetailsComponent },
+  { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
+  { path: 'usuarios', component: UsuarioListComponent },
+  { path: 'usuarios/:id', component: UsuarioDetailsComponent },
   { path: 'add', component: AddUsuarioComponent }
 ];
 
