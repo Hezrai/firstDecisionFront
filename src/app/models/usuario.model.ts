@@ -1,6 +1,6 @@
 export class Usuario {
   id?: any;
-  title?: string;
-  description?: string;
+  nome?: string;
+  cargo?: string;
   published?: boolean;
 }

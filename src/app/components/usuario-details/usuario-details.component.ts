@@ -13,8 +13,8 @@ export class UsuarioDetailsComponent implements OnInit {
   @Input() viewMode = false;
 
   @Input() currentUsuario: Usuario = {
-    title: '',
-    description: '',
+    nome: '',
+    cargo: '',
     published: false
   };
 
@@ -45,8 +45,8 @@ export class UsuarioDetailsComponent implements OnInit {
 
   updatePublished(status: boolean): void {
     const data = {
-      title: this.currentUsuario.title,
-      description: this.currentUsuario.description,
+      title: this.currentUsuario.nome,
+      description: this.currentUsuario.cargo,
       published: status
     };
 

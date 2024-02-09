@@ -2,28 +2,28 @@
   <div *ngIf="currentUsuario.id">
     <h4>Usuario</h4>
     <div>
-      <label><strong>Title:</strong></label> {{ currentUsuario.title }}
+      <label><strong>Nome:</strong></label> {{ currentUsuario.nome }}
     </div>
     <div>
-      <label><strong>Description:</strong></label>
-      {{ currentUsuario.description }}
+      <label><strong>Cargo:</strong></label>
+      {{ currentUsuario.cargo }}
     </div>
-    <div>
+ <!--    <div>
       <label><strong>Status:</strong></label>
-      {{ currentUsuario.published ? "Published" : "Pending" }}
-    </div>
+      {{ currentUsuario.published ? "Ativo" : "Pendente" }}
+    </div> -->
 
-    <a
+  <!--   <a
       class="badge badge-warning"
       routerLink="/usuario/{{ currentUsuario.id }}"
     >
-      Edit
-    </a>
+      Editar
+    </a> -->
   </div>
 
   <div *ngIf="!currentUsuario">
     <br />
-    <p>Please click on a Usuario...</p>
+    <p>Selecione Usuario...</p>
   </div>
 </div>
 
@@ -32,30 +32,30 @@
     <h4>Usuario</h4>
     <form>
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Nome</label>
         <input
           type="text"
           class="form-control"
           id="title"
-          [(ngModel)]="currentUsuario.title"
+          [(ngModel)]="currentUsuario.nome"
           name="title"
         />
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Cargo</label>
         <input
           type="text"
           class="form-control"
           id="description"
-          [(ngModel)]="currentUsuario.description"
+          [(ngModel)]="currentUsuario.cargo"
           name="description"
         />
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label><strong>Status:</strong></label>
-        {{ currentUsuario.published ? "Published" : "Pending" }}
-      </div>
+        {{ currentUsuario.published ? "Publicado" : "Pendente" }}
+      </div> -->
     </form>
 
     <button
@@ -70,11 +70,11 @@
       class="badge badge-primary mr-2"
       (click)="updatePublished(true)"
     >
-      Publish
+      Publicar
     </button>
 
     <button class="badge badge-danger mr-2" (click)="deleteUsuario()">
-      Delete
+      Excluir
     </button>
 
     <button
@@ -82,13 +82,13 @@
       class="badge badge-success mb-2"
       (click)="updateUsuario()"
     >
-      Update
+      Atualizar
     </button>
     <p>{{ message }}</p>
   </div>
 
   <div *ngIf="!currentUsuario.id">
     <br />
-    <p>Cannot access this Usuario...</p>
+    <p>Nao pode acessar usuario...</p>
   </div>
 </ng-template>

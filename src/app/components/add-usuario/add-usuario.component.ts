@@ -10,8 +10,8 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 export class AddUsuarioComponent {
 
   usuario: Usuario = {
-    title: '',
-    description: '',
+    nome: '',
+    cargo: '',
     published: false
   };
   submitted = false;
@@ -20,8 +20,8 @@ export class AddUsuarioComponent {
 
   saveUsuario(): void {
     const data = {
-      title: this.usuario.title,
-      description: this.usuario.description
+      nome: this.usuario.nome,
+      cargo: this.usuario.cargo
     };
 
     this.usuarioService.create(data)
@@ -37,8 +37,8 @@ export class AddUsuarioComponent {
   newUsuario(): void {
     this.submitted = false;
     this.usuario = {
-      title: '',
-      description: '',
+      nome: '',
+      cargo: '',
       published: false
     };
   }

@@ -2,33 +2,33 @@
   <div class="submit-form">
     <div *ngIf="!submitted">
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Nome</label>
         <input
           type="text"
           class="form-control"
           id="title"
           required
-          [(ngModel)]="usuario.title"
+          [(ngModel)]="usuario.nome"
           name="title"
         />
       </div>
 
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description">Cargo</label>
         <input
           class="form-control"
           id="description"
           required
-          [(ngModel)]="usuario.description"
+          [(ngModel)]="usuario.cargo"
           name="description"
         />
       </div>
 
-      <button (click)="saveUsuario()" class="btn btn-success">Submit</button>
+      <button (click)="saveUsuario()" class="btn btn-success">Cadastrar</button>
     </div>
 
     <div *ngIf="submitted">
-      <h4>Usuarioo was submitted successfully!</h4>
+      <h4>Usuario foi adicionado com sucesso!</h4>
       <button class="btn btn-success" (click)="newUsuario()">Add</button>
     </div>
   </div>

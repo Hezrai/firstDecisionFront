@@ -4,7 +4,7 @@
       <input
         type="text"
         class="form-control"
-        placeholder="Search by title"
+        placeholder="Procurar pelo nome"
         [(ngModel)]="title"
       />
       <div class="input-group-append">
@@ -12,7 +12,7 @@
           class="btn btn-outline-secondary"
           (click)="searchTitle()"
         >
-          Search
+          Buscar
         </button>
       </div>
     </div>
@@ -26,12 +26,12 @@
         [class.active]="i == currentIndex"
         (click)="setActiveUsuario(usuario, i)"
       >
-        {{ usuario.title }}
+        {{ usuario.nome }}
       </li>
     </ul>
 
     <button class="m-3 btn btn-sm btn-danger" (click)="removeAllUsuario()">
-      Remove All
+      Remover
     </button>
   </div>
   <div class="col-md-6">
