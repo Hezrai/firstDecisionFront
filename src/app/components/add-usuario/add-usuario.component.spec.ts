@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddUsuarioComponentComponent } from './add-usuario.component';
+import { AddUsuarioComponent } from './add-usuario.component';
 
 describe('AddUsuarioComponent', () => {
-  let component: AddTutorialComponent;
+  let component: AddUsuarioComponent;
   let fixture: ComponentFixture<AddUsuarioComponent>;
 
   beforeEach(async () => {
