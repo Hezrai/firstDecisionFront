@@ -1,0 +1,94 @@
+<div *ngIf="viewMode; else editable">
+  <div *ngIf="currentUsuario.id">
+    <h4>Usuario</h4>
+    <div>
+      <label><strong>Title:</strong></label> {{ currentUsuario.title }}
+    </div>
+    <div>
+      <label><strong>Description:</strong></label>
+      {{ currentUsuario.description }}
+    </div>
+    <div>
+      <label><strong>Status:</strong></label>
+      {{ currentUsuario.published ? "Published" : "Pending" }}
+    </div>
+
+    <a
+      class="badge badge-warning"
+      routerLink="/usuario/{{ currentUsuario.id }}"
+    >
+      Edit
+    </a>
+  </div>
+
+  <div *ngIf="!currentUsuario">
+    <br />
+    <p>Please click on a Usuario...</p>
+  </div>
+</div>
+
+<ng-template #editable>
+  <div *ngIf="currentUsuario.id" class="edit-form">
+    <h4>Usuario</h4>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          [(ngModel)]="currentUsuario.title"
+          name="title"
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          [(ngModel)]="currentUsuario.description"
+          name="description"
+        />
+      </div>
+
+      <div class="form-group">
+        <label><strong>Status:</strong></label>
+        {{ currentUsuario.published ? "Published" : "Pending" }}
+      </div>
+    </form>
+
+    <button
+      class="badge badge-primary mr-2"
+      *ngIf="currentUsuario.published"
+      (click)="updatePublished(false)"
+    >
+      UnPublish
+    </button>
+    <button
+      *ngIf="!currentUsuario.published"
+      class="badge badge-primary mr-2"
+      (click)="updatePublished(true)"
+    >
+      Publish
+    </button>
+
+    <button class="badge badge-danger mr-2" (click)="deleteUsuario()">
+      Delete
+    </button>
+
+    <button
+      type="submit"
+      class="badge badge-success mb-2"
+      (click)="updateUsuario()"
+    >
+      Update
+    </button>
+    <p>{{ message }}</p>
+  </div>
+
+  <div *ngIf="!currentUsuario.id">
+    <br />
+    <p>Cannot access this Usuario...</p>
+  </div>
+</ng-template>
