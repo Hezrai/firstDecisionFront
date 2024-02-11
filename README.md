@@ -38,7 +38,7 @@
     <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 2">
+    <img src="[https://via.placeholder.com/150](https://ibb.co/sFTKSHC)" alt="Imagem 2">
     <figcaption>Legenda da Imagem 2</figcaption>
   </figure>
   <figure>
