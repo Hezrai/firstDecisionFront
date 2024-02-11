@@ -34,7 +34,7 @@
   <p>Este projeto foi desenvolvido por Hezrai .</p>
   <h2>Imagens</h2>
   <figure>
-    <img src="[https://ibb.co/sFTKSHC](https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png)" alt="Imagem 1">
+    <img src="https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png" alt="Imagem 1">
     <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
