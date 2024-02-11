@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,7 +34,7 @@
   <p>Este projeto foi desenvolvido por Hezrai .</p>
   <h2>Imagens</h2>
   <figure>
-    <img src="[https://via.placeholder.com/150](https://files.fm/f/f99j7rbb85)" alt="Imagem 1">
+    <img src="https://ibb.co/sFTKSHC" alt="Imagem 1">
     <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
