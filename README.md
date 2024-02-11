@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,35 +31,32 @@
     <li>Certifique-se de configurar corretamente o banco de dados PostgreSQL.</li>
   </ol>
   <h2>Autor</h2>
-  <p>Este projeto foi desenvolvido por Hezrai .</p>
+  <p>Este projeto foi desenvolvido por [Seu Nome].</p>
   <h2>Imagens</h2>
   <figure>
-    <img src="https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png" alt="Imagem 1">
+    <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1">
     <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
-    <img src="[https://via.placeholder.com/150](https://ibb.co/sFTKSHC)" alt="Imagem 2">
+    <img src="https://i.ibb.co/2Zr76pg/image2.png" alt="Imagem 2">
     <figcaption>Legenda da Imagem 2</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 3">
+    <img src="https://i.ibb.co/r2m6kcW/image3.png" alt="Imagem 3">
     <figcaption>Legenda da Imagem 3</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 4">
+    <img src="https://i.ibb.co/PrFMV0F/image4.png" alt="Imagem 4">
     <figcaption>Legenda da Imagem 4</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 5">
+    <img src="https://i.ibb.co/Gvmqsnf/image5.png" alt="Imagem 5">
     <figcaption>Legenda da Imagem 5</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 6">
+    <img src="https://i.ibb.co/sFTKSHC/image6.png" alt="Imagem 6">
     <figcaption>Legenda da Imagem 6</figcaption>
   </figure>
-  <figure>
-    <img src="[https://via.placeholder.com/150](https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png)" alt="Imagem 7">
-    <figcaption>Base preenchida</figcaption>
-  </figure>
+ 
 </body>
 </html>
