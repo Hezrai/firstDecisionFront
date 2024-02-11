@@ -3,4 +3,5 @@ export class Usuario {
   nome?: string;
   cargo?: string;
   published?: boolean;
+  email?: any;
 }
