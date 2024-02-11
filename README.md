@@ -1,68 +1,31 @@
-# Angular 14 example project: CRUD with Rest API
+Desafio Técnico: Cadastro de Usuários
 
-Build an Angular 14 CRUD App example to consume Rest APIs, display, modify & search data.
+Este projeto é parte de um desafio técnico que visa implementar funcionalidades de cadastro de usuários em uma aplicação web desenvolvida utilizando Java (Spring) no back-end e Angular no front-end.
+Funcionalidades Implementadas
 
-Tutorial Application in that:
-- Each Tutorial has id, title, description, published status.
-- We can create, retrieve, update, delete Tutorials.
-- There is a Search bar for finding Tutorials by title.
+    Cadastro de Usuários: Desenvolvi uma página de registro de usuário no lado do Angular, permitindo que os usuários preencham campos como nome, e-mail, senha e confirmação de senha. Implementei validações para garantir que os dados inseridos atendam aos critérios especificados, como comprimento mínimo e máximo para o nome e a senha, e que o e-mail seja válido. Além disso, desabilitei o botão de envio enquanto houver erros de validação.
 
-![angular-14-crud-example](angular-14-crud-example.png)
+    API Java / Spring: Desenvolvi uma API RESTful no lado do Java / Spring para processar o registro de usuários. Esta API valida os dados recebidos da solicitação, incluindo a confirmação de senha, e armazena os usuários registrados em um banco de dados PostgreSQL. Implementei respostas apropriadas para o front-end, indicando sucesso ou erro no registro.
 
-Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
+    Testes Unitários: Escrevi testes unitários tanto para a API Java quanto para a página Angular. Esses testes verificam se os dados são validados corretamente, se são armazenados no banco de dados e se as validações e o comportamento do botão de envio na página Angular estão funcionando conforme o esperado.
 
-For instruction, please visit:
-> [Angular example: CRUD Application with Rest API](https://www.bezkoder.com/angular-14-crud-example/)
+    Integração Angular / Java: Integrei a página de registro Angular com a API Java, permitindo que os dados do formulário sejam enviados para o back-end. Também implementei um tratamento de erro adequado na página Angular para lidar com falhas na comunicação com o back-end, garantindo uma experiência mais robusta para o usuário final.
 
-More Practice:
-> [Angular Pagination example | ngx-pagination](https://www.bezkoder.com/angular-13-pagination-ngx/)
+Pré-requisitos
 
-> [Angular JWT Authentication & Authorization with Web API](https://www.bezkoder.com/angular-13-jwt-auth/)
+    Node.js
+    Angular CLI
+    Java Development Kit (JDK)
+    PostgreSQL
 
-> [Angular File upload example with Progress bar](https://www.bezkoder.com/angular-14-file-upload/)
+Como Executar o Projeto
 
-> [Angular Multiple Files upload example with Progress Bar](https://www.bezkoder.com/angular-13-multiple-file-upload/)
+    Clone este repositório para sua máquina local.
+    Instale as dependências do projeto Angular executando o comando npm install.
+    Inicie o servidor Angular com o comando ng serve.
+    Execute a API Java / Spring em seu ambiente de desenvolvimento.
+    Certifique-se de configurar corretamente o banco de dados PostgreSQL.
 
-> [Angular Form Validation example (Reactive Forms)](https://www.bezkoder.com/angular-14-form-validation/)
+Autor
 
-Fullstack with Node:
-
-> [Angular + Node Express + MySQL example](https://www.bezkoder.com/angular-13-node-js-express-mysql/)
-
-> [Angular + Node Express + PostgreSQL example](https://www.bezkoder.com/angular-13-node-js-express-postgresql/)
-
-> [Angular + Node Express + MongoDB example](https://www.bezkoder.com/mean-stack-crud-example-angular-13/)
-
-> [Angular + Node Express: File upload example](https://www.bezkoder.com/angular-13-node-express-file-upload/)
-
-Fullstack with Spring Boot:
-
-> [Angular + Spring Boot + H2 Embedded Database example](https://www.bezkoder.com/spring-boot-angular-14-crud/)
-
-> [Angular + Spring Boot + MySQL example](https://www.bezkoder.com/spring-boot-angular-13-mysql/)
-
-> [Angular + Spring Boot + PostgreSQL example](https://www.bezkoder.com/spring-boot-angular-13-postgresql/)
-
-> [Angular + Spring Boot + MongoDB example](https://www.bezkoder.com/angular-13-spring-boot-mongodb/)
-
-> [Angular + Spring Boot: File upload example](https://www.bezkoder.com/angular-13-spring-boot-file-upload/)
-
-Fullstack with Django:
-> [Angular + Django example](https://bezkoder.com/django-angular-13-crud-rest-framework/)
-
-Security:
-> [Angular + Spring Boot: JWT Authentication and Authorization example](https://www.bezkoder.com/angular-12-spring-boot-jwt-auth/)
-
-> [Angular + Node.js Express: JWT Authentication and Authorization example](https://www.bezkoder.com/node-js-angular-12-jwt-auth/)
-
-Serverless with Firebase:
-> [Angular Firebase CRUD with Realtime DataBase | AngularFireDatabase](https://www.bezkoder.com/angular-13-firebase-crud/)
-
-> [Angular Firestore CRUD example with AngularFireStore](https://www.bezkoder.com/angular-13-firestore-crud-angularfirestore/)
-
-> [Angular Firebase Storage: File Upload/Display/Delete example](https://www.bezkoder.com/angular-13-firebase-storage/)
-
-Integration (run back-end & front-end on same server/port)
-> [How to integrate Angular with Node Restful Services](https://bezkoder.com/integrate-angular-12-node-js/)
-
-> [How to Integrate Angular with Spring Boot Rest API](https://bezkoder.com/integrate-angular-12-spring-boot/)
+Este projeto foi desenvolvido por [Seu Nome].
