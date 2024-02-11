@@ -34,7 +34,7 @@
   <p>Este projeto foi desenvolvido por Hezrai .</p>
   <h2>Imagens</h2>
   <figure>
-    <img src="https://ibb.co/sFTKSHC" alt="Imagem 1">
+    <img src="[https://ibb.co/sFTKSHC](https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png)" alt="Imagem 1">
     <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
@@ -58,8 +58,8 @@
     <figcaption>Legenda da Imagem 6</figcaption>
   </figure>
   <figure>
-    <img src="https://via.placeholder.com/150" alt="Imagem 7">
-    <figcaption>Legenda da Imagem 7</figcaption>
+    <img src="[https://via.placeholder.com/150](https://i.ibb.co/RCX3nyN/base-Cadastrado-Sucesso.png)" alt="Imagem 7">
+    <figcaption>Base preenchida</figcaption>
   </figure>
 </body>
 </html>
