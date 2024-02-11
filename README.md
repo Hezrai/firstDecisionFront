@@ -31,7 +31,7 @@
     <li>Certifique-se de configurar corretamente o banco de dados PostgreSQL.</li>
   </ol>
   <h2>Autor</h2>
-  <p>Este projeto foi desenvolvido por [Seu Nome].</p>
+  <p>Este projeto foi desenvolvido por Hezrai].</p>
   <h2>Imagens</h2>
   <figure>
     <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1" style="width: 500px; height: auto;"> 
