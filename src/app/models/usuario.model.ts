@@ -4,4 +4,5 @@ export class Usuario {
   cargo?: string;
   published?: boolean;
   email?: any;
+  senha?: any;
 }

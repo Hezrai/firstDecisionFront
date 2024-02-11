@@ -1,94 +1,130 @@
-<div *ngIf="viewMode; else editable">
-  <div *ngIf="currentUsuario.id">
-    <h4>Usuario</h4>
-    <div>
-      <label><strong>Nome:</strong></label> {{ currentUsuario.nome }}
-    </div>
-    <div>
-      <label><strong>Cargo:</strong></label>
-      {{ currentUsuario.cargo }}
-    </div>
- <!--    <div>
-      <label><strong>Status:</strong></label>
-      {{ currentUsuario.published ? "Ativo" : "Pendente" }}
-    </div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeZrai -Technical Challenge - FirstDecision</title>
+  <!-- Adicionando Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Adicionando Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Estilos personalizados */
+    .user-details {
+      background-color: #f8f9fa;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+    }
 
-  <!--   <a
-      class="badge badge-warning"
-      routerLink="/usuario/{{ currentUsuario.id }}"
-    >
-      Editar
-    </a> -->
-  </div>
+    .user-details label {
+      font-weight: bold;
+    }
 
-  <div *ngIf="!currentUsuario">
-    <br />
-    <p>Selecione Usuario...</p>
-  </div>
-</div>
+    .user-details p {
+      margin-bottom: 5px;
+    }
 
-<ng-template #editable>
-  <div *ngIf="currentUsuario.id" class="edit-form">
-    <h4>Usuario</h4>
-    <form>
-      <div class="form-group">
-        <label for="title">Nome</label>
-        <input
-          type="text"
-          class="form-control"
-          id="title"
-          [(ngModel)]="currentUsuario.nome"
-          name="title"
-        />
+    .close-icon {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div *ngIf="mostrarDetalheUsuario">
+    <div *ngIf="currentUsuario.id" class="user-details">
+      <i class="fas fa-times close-icon" (click)="closeUserDetails()"></i>
+      <h4>Usuario</h4>
+      <div>
+        <label><strong>Nome:</strong></label>
+        <p>{{ currentUsuario.nome }}</p>
       </div>
-      <div class="form-group">
-        <label for="description">Cargo</label>
-        <input
-          type="text"
-          class="form-control"
-          id="description"
-          [(ngModel)]="currentUsuario.cargo"
-          name="description"
-        />
+      <div>
+        <label><strong>Cargo:</strong></label>
+        <p>{{ currentUsuario.cargo }}</p>
       </div>
+      <div>
+        <label><strong>Email:</strong></label>
+        <p>{{ currentUsuario.email }}</p>
+      </div>
+    </div>
 
-      <!-- <div class="form-group">
-        <label><strong>Status:</strong></label>
-        {{ currentUsuario.published ? "Publicado" : "Pendente" }}
-      </div> -->
-    </form>
-
-    <button
-      class="badge badge-primary mr-2"
-      *ngIf="currentUsuario.published"
-      (click)="updatePublished(false)"
-    >
-      UnPublish
-    </button>
-    <button
-      *ngIf="!currentUsuario.published"
-      class="badge badge-primary mr-2"
-      (click)="updatePublished(true)"
-    >
-      Publicar
-    </button>
-
-    <button class="badge badge-danger mr-2" (click)="deleteUsuario()">
-      Excluir
-    </button>
-
-    <button
-      type="submit"
-      class="badge badge-success mb-2"
-      (click)="updateUsuario()"
-    >
-      Atualizar
-    </button>
-    <p>{{ message }}</p>
+    <div *ngIf="!currentUsuario" class="user-details">
+      <br />
+      <p>Selecione Usuário...</p>
+    </div>
   </div>
 
-  <div *ngIf="!currentUsuario.id">
-    <br />
-    <p>Nao pode acessar usuario...</p>
-  </div>
-</ng-template>
+  <ng-template #editable>
+    <div *ngIf="currentUsuario.id" class="edit-form">
+      <h4>Usuario</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="currentUsuario.nome"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Cargo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            [(ngModel)]="currentUsuario.cargo"
+            name="description"
+          />
+        </div>
+      </form>
+
+      <button
+        class="badge badge-primary"
+        *ngIf="currentUsuario.published"
+        (click)="updatePublished(false)"
+      >
+        UnPublish
+      </button>
+      <button
+        *ngIf="!currentUsuario.published"
+        class="badge badge-primary"
+        (click)="updatePublished(true)"
+      >
+        Publicar
+      </button>
+
+      <button class="badge badge-danger" (click)="deleteUsuario()">
+        Excluir
+      </button>
+
+      <button
+        type="submit"
+        class="badge badge-success"
+        (click)="updateUsuario()"
+      >
+        Atualizar
+      </button>
+      <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!currentUsuario.id" class="user-details">
+      <br />
+      <p>Não pode acessar usuário...</p>
+    </div>
+  </ng-template>
+
+  <script>
+    function closeUserDetails() {
+      document.querySelector('.user-details').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

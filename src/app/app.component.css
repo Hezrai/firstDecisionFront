@@ -1,0 +1,26 @@
+/* Estilos personalizados para a barra de navegação */
+.navbar {
+    background-color: #4682B4; /* Cor de fundo da barra */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra e muda a cor */
+  }
+
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #fff; /* Altera a cor do texto no hover */
+    background-color: #2a6496; /* Altera a cor de fundo no hover */
+  }
+
+  /* Ajusta a altura dos itens de navegação */
+  .navbar-nav .nav-item {
+    padding: 0 10px;
+  }
+
+  /* Estilos para os ícones */
+  .nav-link .fa {
+    transition: transform 0.3s ease-in-out; /* Adiciona transição suave */
+  }
+
+  .nav-link:hover .fa {
+    transform: rotate(360deg); /* Faz os ícones girarem no hover */
+  }
+  

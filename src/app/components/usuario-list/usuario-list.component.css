@@ -3,3 +3,31 @@
   max-width: 750px;
   margin: auto;
 }
+
+/* Seus estilos CSS personalizados aqui */
+.container-fluid {
+  background-color: #f8f9fa; /* Cor de fundo */
+  padding: 20px;
+}
+
+.user-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+  background-color: #e9ecef; /* Cor de fundo ao passar o mouse */
+}
+
+.list-group-item {
+  border: none; /* Remove as bordas dos itens da lista */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Cor de fundo do botão de remover */
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Cor de fundo ao passar o mouse */
+}

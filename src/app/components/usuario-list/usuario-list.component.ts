@@ -9,61 +9,61 @@ import { UsuarioService } from 'src/app/services/usuario.service';
 })
 export class UsuarioListComponent implements OnInit {
 
-  usuario?: Usuario[];
-  currentUsuario: Usuario = {};
-  currentIndex = -1;
-  title = '';
+  usuario?: Usuario[]; 
+  currentUsuario: Usuario = {};  
+  currentIndex = -1; // Índice de um universo paralelo. Deve ser -1 por padrão.
+  title = '';  
 
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
-    this.retrieveUsuario();
+    this.retrieveUsuario();  
   }
 
   retrieveUsuario(): void {
     this.usuarioService.getAll()
       .subscribe({
         next: (data) => {
-          this.usuario = data;
-          console.log(data);
+          this.usuario = data;  
+          //console.log(data);  
         },
-        error: (e) => console.error(e)
+        error: (e) => console.error(e) //   Quem ousa atrapalhar minha busca?
       });
   }
 
   refreshList(): void {
-    this.retrieveUsuario();
-    this.currentUsuario = {};
-    this.currentIndex = -1;
+    this.retrieveUsuario();  
+    this.currentUsuario = {};  
+    this.currentIndex = -1;  
   }
 
   setActiveUsuario(usuario: Usuario, index: number): void {
-    this.currentUsuario = usuario;
-    this.currentIndex = index;
+    this.currentUsuario = usuario; 
+    this.currentIndex = index; // Novo índice, nova aventura!
   }
 
   removeAllUsuario(): void {
     this.usuarioService.deleteAll()
       .subscribe({
         next: (res) => {
-          console.log(res);
-          this.refreshList();
+          //(res);  
+          this.refreshList();  
         },
-        error: (e) => console.error(e)
+        error: (e) => console.error(e)  
       });
   }
 
   searchTitle(): void {
-    this.currentUsuario = {};
-    this.currentIndex = -1;
+    this.currentUsuario = {};  
+    this.currentIndex = -1;  
 
     this.usuarioService.findByTitle(this.title)
       .subscribe({
         next: (data) => {
-          this.usuario = data;
-          console.log(data);
+          this.usuario = data;  
+          //console.log(data);  
         },
-        error: (e) => console.error(e)
+        error: (e) => console.error(e)  
       });
   }
 
