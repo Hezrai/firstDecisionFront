@@ -34,29 +34,19 @@
   <p>Este projeto foi desenvolvido por [Seu Nome].</p>
   <h2>Imagens</h2>
   <figure>
-    <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1">
-    <figcaption>Legenda da Imagem 1</figcaption>
+    <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1" style="width: 500px; height: auto;"> 
   </figure>
   <figure>
-    <img src="https://i.ibb.co/2Zr76pg/image2.png" alt="Imagem 2">
-    <figcaption>Legenda da Imagem 2</figcaption>
+    <img src="https://i.ibb.co/r2m6kcW/image3.png" alt="Imagem 3" style="width: 500px; height: auto;"> 
   </figure>
   <figure>
-    <img src="https://i.ibb.co/r2m6kcW/image3.png" alt="Imagem 3">
-    <figcaption>Legenda da Imagem 3</figcaption>
+    <img src="https://i.ibb.co/PrFMV0F/image4.png" alt="Imagem 4" style="width: 500px; height: auto;"> 
   </figure>
   <figure>
-    <img src="https://i.ibb.co/PrFMV0F/image4.png" alt="Imagem 4">
-    <figcaption>Legenda da Imagem 4</figcaption>
+    <img src="https://i.ibb.co/Gvmqsnf/image5.png" alt="Imagem 5" style="width: 500px; height: auto;"> 
   </figure>
   <figure>
-    <img src="https://i.ibb.co/Gvmqsnf/image5.png" alt="Imagem 5">
-    <figcaption>Legenda da Imagem 5</figcaption>
+    <img src="https://i.ibb.co/sFTKSHC/image6.png" alt="Imagem 6" style="width: 500px; height: auto;"> 
   </figure>
-  <figure>
-    <img src="https://i.ibb.co/sFTKSHC/image6.png" alt="Imagem 6">
-    <figcaption>Legenda da Imagem 6</figcaption>
-  </figure>
- 
 </body>
 </html>
