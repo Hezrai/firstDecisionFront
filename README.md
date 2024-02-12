@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>Desafio Técnico: Cadastro de Usuários</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zKOPjYHBl6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p>Este projeto é parte de um desafio técnico que visa implementar funcionalidades de cadastro de usuários em uma aplicação web desenvolvida utilizando Java (Spring) no back-end e Angular no front-end.</p>
   <h2>Funcionalidades Implementadas</h2>
   <ul>
@@ -31,7 +32,7 @@
     <li>Certifique-se de configurar corretamente o banco de dados PostgreSQL.</li>
   </ol>
   <h2>Autor</h2>
-  <p>Este projeto foi desenvolvido por Hezrai].</p>
+  <p>Este projeto foi desenvolvido por Hezrai.</p>
   <h2>Imagens</h2>
   <figure>
     <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1" style="width: 500px; height: auto;"> 
