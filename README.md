@@ -7,9 +7,7 @@
 </head>
 <body>
   <h1>Desafio Técnico: Cadastro de Usuários</h1>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/zKOPjYHBl6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    
-  </iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/zKOPjYHBl6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p>Este projeto é parte de um desafio técnico que visa implementar funcionalidades de cadastro de usuários em uma aplicação web desenvolvida utilizando Java (Spring) no back-end e Angular no front-end.</p>
   <h2>Funcionalidades Implementadas</h2>
   <ul>
@@ -38,18 +36,23 @@
   <h2>Imagens</h2>
   <figure>
     <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1" style="width: 500px; height: auto;"> 
+    <figcaption>Legenda da Imagem 1</figcaption>
   </figure>
   <figure>
     <img src="https://i.ibb.co/r2m6kcW/image3.png" alt="Imagem 3" style="width: 500px; height: auto;"> 
+    <figcaption>Legenda da Imagem 3</figcaption>
   </figure>
   <figure>
     <img src="https://i.ibb.co/PrFMV0F/image4.png" alt="Imagem 4" style="width: 500px; height: auto;"> 
+    <figcaption>Legenda da Imagem 4</figcaption>
   </figure>
   <figure>
     <img src="https://i.ibb.co/Gvmqsnf/image5.png" alt="Imagem 5" style="width: 500px; height: auto;"> 
+    <figcaption>Legenda da Imagem 5</figcaption>
   </figure>
   <figure>
     <img src="https://i.ibb.co/sFTKSHC/image6.png" alt="Imagem 6" style="width: 500px; height: auto;"> 
+    <figcaption>Legenda da Imagem 6</figcaption>
   </figure>
 </body>
 </html>
