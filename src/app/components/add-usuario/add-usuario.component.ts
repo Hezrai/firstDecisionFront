@@ -57,7 +57,9 @@ export class AddUsuarioComponent {
     }
   }
 
-  //sim! poderia ter feito de uma forma mais elegante! mas didaticamente é melhor pra explicar o entendimento da regra
+ // Oh, claro! Eu poderia ter optado por uma abordagem mais elegante, mas, sabe, às vezes é melhor complicar 
+ // um pouco as coisas para que eu possa "brilhantemente" explicar os conceitos mais básicos. 
+
   isFormValid(): boolean {
     // Verifica se todos os campos obrigatórios estão preenchidos
     if (!this.usuario.nome || !this.usuario.cargo || !this.usuario.email || !this.usuario.senha || !this.confirmSenha) {

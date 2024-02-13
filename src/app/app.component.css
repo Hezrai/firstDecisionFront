@@ -1,13 +1,13 @@
 /* Estilos personalizados para a barra de navegação */
 .navbar {
-    background-color: #4682B4; /* Cor de fundo da barra */
+    background-color: #191970; /* Cor de fundo da barra */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra e muda a cor */
   }
 
   .navbar-brand:hover,
   .nav-link:hover {
     color: #fff; /* Altera a cor do texto no hover */
-    background-color: #2a6496; /* Altera a cor de fundo no hover */
+    background-color: rgb(45, 144, 224); /* Altera a cor de fundo no hover */
   }
 
   /* Ajusta a altura dos itens de navegação */
