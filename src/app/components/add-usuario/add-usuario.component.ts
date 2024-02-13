@@ -24,12 +24,16 @@ export class AddUsuarioComponent {
   constructor(private usuarioService: UsuarioService) {
     this.usuario.senha = ''; // Garantindo que essa senha fique limpa
   }
-
+  isEmailValid(): boolean {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(this.usuario.email);
+  }
   saveUsuario(): void {
     this.showAlertCadastro = false;
     // Verifica se todos os campos estão preenchidos
     if (this.usuario.nome && this.usuario.cargo && this.usuario.email && this.usuario.senha && this.confirmSenha) {
       // Verifica se as senhas coincidem
+     
       if (this.usuario.senha === this.confirmSenha) {
         const data = {
           nome: this.usuario.nome,
@@ -52,6 +56,33 @@ export class AddUsuarioComponent {
       this.showAlertCadastro = true; // Exibe a mensagem de alerta se algum campo estiver vazio
     }
   }
+
+  //sim! poderia ter feito de uma forma mais elegante! mas didaticamente é melhor pra explicar o entendimento da regra
+  isFormValid(): boolean {
+    // Verifica se todos os campos obrigatórios estão preenchidos
+    if (!this.usuario.nome || !this.usuario.cargo || !this.usuario.email || !this.usuario.senha || !this.confirmSenha) {
+      return false;
+    }
+  
+    // Verifica se o email é válido
+    if (!this.isEmailValid()) {
+      return false;
+    }
+  
+    // Verifica se a senha tem o comprimento correto
+    if (this.usuario.senha.length < 6 || this.usuario.senha.length > 20) {
+      return false;
+    }
+  
+    // Verifica se as senhas coincidem
+    if (this.usuario.senha !== this.confirmSenha) {
+      return false;
+    }
+  
+    // Retorna true se todos os critérios forem atendidos
+    return true;
+  }
+  
 
   newUsuario() {
     this.usuario = {

@@ -45,13 +45,18 @@
           class="form-control"
           id="email"
           required
-          minlength="6"
-          maxlength="20"
           [(ngModel)]="usuario.email"
           name="email"
-          [ngClass]="{'error': !usuario.email && showAlertCadastro}"
+          [ngClass]="{'error': (!usuario.email || !isEmailValid()) && showAlertCadastro}"
         />
+        <div *ngIf="!usuario.email && showAlertCadastro" class="text-danger">
+          Email é obrigatório.
+        </div>
+        <div *ngIf="isEmailValid() === false" class="text-danger">
+          O formato do email é inválido.
+        </div>
       </div>
+      
 
       <div class="form-group">
         <label for="password">Senha</label>
@@ -60,11 +65,23 @@
           class="form-control"
           id="password"
           required
+          minlength="6"
+          maxlength="20"
           [(ngModel)]="usuario.senha"
           name="password"
-          [ngClass]="{'error': !usuario.senha && showAlert}"
+          [ngClass]="{'error': !usuario.senha && showAlert || usuario.senha?.length < 6 || usuario.senha?.length > 20}"
         />
+        <div *ngIf="!usuario.senha && showAlert" class="text-danger">
+          Senha é obrigatória.
+        </div>
+        <div *ngIf="usuario.senha?.length < 6" class="text-danger">
+          A senha deve ter pelo menos 6 caracteres.
+        </div>
+        <div *ngIf="usuario.senha?.length > 20" class="text-danger">
+          A senha deve ter no máximo 20 caracteres.
+        </div>
       </div>
+      
 
       <div class="form-group">
         <label for="confirmPassword"><i>Confirme a Senha</i></label>
@@ -79,7 +96,8 @@
         />
       </div>
 
-      <button (click)="saveUsuario()" class="btn btn-success">Cadastrar</button>
+      <button (click)="saveUsuario()" class="btn btn-success" [disabled]="!isFormValid()">Cadastrar</button>
+
 
       <!-- Alertas para campos vazios ou senhas diferentes -->
       <div *ngIf="showAlert" class="text-danger">
