@@ -44,9 +44,7 @@ Link para o video demonstrativo no youtube: https://www.youtube.com/watch?v=zKOP
 <a href="https://ibb.co/27JVNQW"><img src="https://i.ibb.co/GvmYTLn/base-Vazia.png" alt="base-Vazia" border="0"></a>
 <a href="https://ibb.co/1Zt4FkN"><img src="https://i.ibb.co/y0cxHrC/boas-Vindas.png" alt="boas-Vindas" border="0"></a>
 <a href="https://ibb.co/3fpr4yF"><img src="https://i.ibb.co/8zrKNDx/cadastrado-Com-Sucesso.png" alt="cadastrado-Com-Sucesso" border="0"></a>
-<a href="https://ibb.co/kGC4wXv"><img src="https://i.ibb.co/0nbC6rv/confirme-Senha.png" alt="confirme-Senha" border="0"></a>
-<a href="https://ibb.co/ZcGPDdv"><img src="https://i.ibb.co/KVbkv6B/Dados-Usuario.png" alt="Dados-Usuario" border="0"></a>
-<a href="https://ibb.co/th2WH2D"><img src="https://i.ibb.co/VNCPLCT/Listausuarios.png" alt="Listausuarios" border="0"></a> 
-<a href="https://ibb.co/6wMZhbM"><img src="https://i.ibb.co/tKGhfcG/TelaErro.png" alt="TelaErro" border="0"></a>
+<a href="https://ibb.co/kGC4wXv"><img src="https://i.ibb.co/0nbC6rv/confirme-Senha.png" alt="confirme-Senha" border="0"></a> 
+<a href="https://ibb.co/th2WH2D"><img src="https://i.ibb.co/VNCPLCT/Listausuarios.png" alt="Listausuarios" border="0"></a>  
 </body>
 </html>
