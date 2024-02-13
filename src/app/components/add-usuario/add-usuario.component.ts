@@ -25,9 +25,13 @@ export class AddUsuarioComponent {
     this.usuario.senha = ''; // Garantindo que essa senha fique limpa
   }
   isEmailValid(): boolean {
+    if (!this.usuario.email) {
+        return true; //validar apenas se tiver algo pra validar
+    }
+
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(this.usuario.email);
-  }
+}
   saveUsuario(): void {
     this.showAlertCadastro = false;
     // Verifica se todos os campos estão preenchidos
