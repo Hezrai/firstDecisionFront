@@ -22,7 +22,7 @@
           required
           [(ngModel)]="usuario.nome"
           name="title"
-          [ngClass]="{'error': !usuario.nome && showAlert}"  
+          [ngClass]="{'error': !usuario.nome && showAlertCadastro}"  
         />
       </div>
 
@@ -34,7 +34,7 @@
           required
           [(ngModel)]="usuario.cargo"
           name="cargo"
-          [ngClass]="{'error': !usuario.cargo && showAlert}"
+          [ngClass]="{'error': !usuario.cargo && showAlertCadastro}"
         />
       </div>
 
@@ -49,7 +49,7 @@
           maxlength="20"
           [(ngModel)]="usuario.email"
           name="email"
-          [ngClass]="{'error': !usuario.email && showAlert}"
+          [ngClass]="{'error': !usuario.email && showAlertCadastro}"
         />
       </div>
 
@@ -83,7 +83,10 @@
 
       <!-- Alertas para campos vazios ou senhas diferentes -->
       <div *ngIf="showAlert" class="text-danger">
-        Por favor, preencha todos os campos corretamente.
+        As senhas não conferem
+      </div>
+      <div *ngIf="showAlertCadastro" class="text-danger">
+        Preencha os campos sinalizados!
       </div>
     </div>
 

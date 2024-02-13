@@ -19,12 +19,14 @@ export class AddUsuarioComponent {
   confirmSenha = '';
   submitted = false;
   showAlert = false;
+  showAlertCadastro = false;
 
   constructor(private usuarioService: UsuarioService) {
     this.usuario.senha = ''; // Garantindo que essa senha fique limpa
   }
 
   saveUsuario(): void {
+    this.showAlertCadastro = false;
     // Verifica se todos os campos estão preenchidos
     if (this.usuario.nome && this.usuario.cargo && this.usuario.email && this.usuario.senha && this.confirmSenha) {
       // Verifica se as senhas coincidem
@@ -47,7 +49,7 @@ export class AddUsuarioComponent {
         this.showAlert = true; // Exibe a mensagem de alerta se as senhas não coincidirem
       }
     } else {
-      this.showAlert = true; // Exibe a mensagem de alerta se algum campo estiver vazio
+      this.showAlertCadastro = true; // Exibe a mensagem de alerta se algum campo estiver vazio
     }
   }
 
