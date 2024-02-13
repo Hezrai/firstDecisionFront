@@ -39,20 +39,6 @@ Link para o video demonstrativo no youtube: https://www.youtube.com/watch?v=zKOP
   <h2>Autor</h2>
   <p>Este projeto foi desenvolvido por Hezrai.</p>
   <h2>Imagens</h2>
-  <figure>
-    <img src="https://i.ibb.co/y6PBg34/image1.png" alt="Imagem 1" style="width: 500px; height: auto;"> 
-  </figure>
-  <figure>
-    <img src="https://i.ibb.co/r2m6kcW/image3.png" alt="Imagem 3" style="width: 500px; height: auto;"> 
-  </figure>
-  <figure>
-    <img src="https://i.ibb.co/PrFMV0F/image4.png" alt="Imagem 4" style="width: 500px; height: auto;"> 
-  </figure>
-  <figure>
-    <img src="https://i.ibb.co/Gvmqsnf/image5.png" alt="Imagem 5" style="width: 500px; height: auto;"> 
-  </figure>
-  <figure>
-    <img src="https://i.ibb.co/sFTKSHC/image6.png" alt="Imagem 6" style="width: 500px; height: auto;"> 
-  </figure>
+  
 </body>
 </html>
